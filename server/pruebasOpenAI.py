@@ -14,7 +14,7 @@ def encode_image(image_path):
     return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Path to your image
-image_path = os.path.join('.','cat.webp')
+image_path = os.path.join('.','borzoi_test.jpg')
 
 # Getting the base64 string
 base64_image = encode_image(image_path)
@@ -32,7 +32,7 @@ payload = {
       "content": [
         {
           "type": "text",
-          "text": "Is there something off in this image?, Return yes or no."
+          "text": "Could you please describe me what this is?."
         },
         {
           "type": "image_url",

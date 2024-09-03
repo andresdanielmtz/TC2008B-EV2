@@ -20,7 +20,7 @@ headers = {
 }
 
 # Route to handle image processing
-@image_processing_bp.route('/process', methods=['POST'])
+@image_processing_bp.route('/', methods=['POST'])
 def process_image():
     try:
         # Get the JSON payload from the request

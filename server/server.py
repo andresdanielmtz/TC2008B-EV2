@@ -1,7 +1,7 @@
 # server.py
 from flask import Flask
 from simulation import simulation_bp
-from image_processing import image_processing_bp
+from server.vision.vision import image_processing_bp
 
 # Create the Flask app
 app = Flask(__name__)

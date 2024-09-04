@@ -1,7 +1,7 @@
 # server.py
 from flask import Flask
 from simulation import simulation_bp
-from server.vision.vision import image_processing_bp
+from vision.vision import image_processing_bp
 
 # Create the Flask app
 app = Flask(__name__)
@@ -17,4 +17,4 @@ def home():
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8585)
+    app.run(debug=True, host="0.0.0.0", port=5001)
